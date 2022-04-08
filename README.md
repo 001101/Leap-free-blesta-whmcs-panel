@@ -1,154 +1,10 @@
 #### Table of Contents
-- [Current State of WHMCS](#current-state-of-whmcs)
 - [What can We do?](#what-can-we-do)
-- [Leap: an Alternative to WHMCS](#leap-an-alternative-to-whmcs)
+- [Weap: an Alternative to WHMCS](#Weap-an-alternative-to-whmcs)
 - [A Little Background About Me](#a-little-background-about-me)
 - [Tell me more](#tell-me-more)
 - [Notes](#notes)
 
-# Current State of WHMCS
-
-I wrote a lenghty article on why [providers should avoid WHMCS](https://katamaze.com/blog/54/avoid-whmcs-blesta-hostbill-clientexec-ubersmith-hosting) and alternatives. Here I'll keep it short with the help of some memes.
-
-<table>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/coding-in-whmcs-feels-like.jpg">
-  </td>
-  <td>
-   Coding in WHMCS is miserable.<br><br>
-   I am not referring to the encoded source code but to WHMCS development cycle that is a forced march where releases go from beta to (un)stable at the speed of light.<br><br>
-   Every release is a pile of bugs most of which are never addressed and add up to existing ones.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/6d2b72aa2928dec7d2441219abc2da19/shoveling-bugs-in-whmcs.jpg">
-  </td>
-  <td>
-   That's how you feel while debugging in WHMCS.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/creating-modules-for-whmcs.jpg">
-  </td>
-  <td>
-   Try making something more complex than a template and you condemn yourself to a living nightmare. WHMCS staff is obtuse. They have ears, but they don't listen.<br><br>
-   As proof of this, they cease supporting crucial features with short notice and for silly reasons forcing you to rethink entire chunks of code over and over again. That's how you end up working when people normally sleep.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/whmcs-listeing-to-customers.jpg"/>
-  </td>
-  <td>
-   «We appreciate discussions»<br>
-   «Your feedback matters»<br>
-   «I appreciate your feedback»<br>
-   «You are welcome to discuss this»<br><br>
-   Lies.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/whmcs-not-fixing-bugs.jpg"/>
-  </td>
-  <td>
-   WHMCS approach to bug fixing.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/6d2b72aa2928dec7d2441219abc2da19/whmcs-fixing-bug.jpg"/>
-  </td>
-  <td>
-   Speaking of bugs, I don't want to be too harsh towards WHMCS. I give them credit for fixing some bugs that have been reported back in 2010.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/whmcs-feature-requests.jpg"/>
-  </td>
-  <td>
-   The place where good ideas go to die.<br><br>
-   Many invest considerable amount of time writing detailed requests but WHMCS don't give a damn. As proof of this, they forget to approve incoming requests for months and close the most popular ones without saying a word.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/whmcs-new-feature.jpg"/>
-  </td>
-  <td>
-   They flood us with barely tested features that make little or no sense for their customer base.<br><br>
-   They take design from Instagram, authentication from Google, mix it with a bit of Facebook and expect us to make some sense out of this Frankenstein's monster.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/whmcs-release-changelog.jpg"/>
-  </td>
-  <td>
-   Literally every release of WHMCS.<br><br>
-   Bugs probably account for the 10% of this software. Isn't it scary? As a reference I started fixing billing bugs in 2008 with <a href="https://katamaze.com/whmcs/billing-extension/specifications">Billing Extension</a> (one of my modules). 100% of problems I fixed are still part of the latest release of WHMCS.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/whmcs-the-myth-of-stable-release.jpg"/>
-  </td>
-  <td>
-   Whenever you report a bug you will be met with one of the following replies:<br><br>
-   «It is working as intended»<br>
-   «Submit a feature requests»<br><br>
-   They have the innate ability of turning bugs into feature requests.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/whmcs-ease-of-use.jpg"/>
-  </td>
-  <td>
-   If they were car manufacturers rather than developers then there would be cars with triangular wheels, driver seats facing backward and airbags just below your butt.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/passive-aggressive-communication-by-whmcs.jpg"/>
-  </td>
-  <td>
-   They have no problem at lying at your face and insult your intelligence. For example when they increased prices up to 4000% during the coronavirus pandemic, they had the nerve to say that pricing didn't change by this much. It's maths, not an opinion.<br><br>
-   As much as they claim to love and welcome discussion, they avoid answering to uncomfortable questions with the usual blah blah blah and proceed closing threads like nothing happened.<br><br>
-   They are also disrespectful and ungrateful towards third-party developers that add value to their software. WHMCS made back door deals in contrast with their own written rules promoting an unhealthy competition. This way some shady developers can do whatever they want while others that follow rules must stay in oblivion.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/whmcs-taxing-customers.jpg"/>
-  </td>
-  <td>
-   Massive license price hike (4000%), death of lifetime licenses, moved from monthly subscription to basically a % of your revenue. Do you also want a butt slice?<br><br>
-   They are leading small and medium sized companies to death. You can either shut down, go away or become a reseller of services of their partners with big pockets.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/whmcs-the-future-hosting-industry.jpg"/>
-  </td>
-  <td>
-   You can take as granted that in this whole industry every software is intended to cost you more and more. Or even worse they want a percentage of your revenue.
-  </td>
- </tr>
- <tr>
-  <td width="300" align="center">
-   <img src="https://katamaze.com/modules/addons/Mercury/uploads/files/Blog/3c3e3a81cf0ca6e2aeb59bfb6d4be904/whmcs-blesta-hostbill-clientexec-ubersmith.jpg"/>
-  </td>
-  <td>
-   Speaking of alternatives, in this industry promises are meant to be broken.<br><br>
-   They promise you everything you want to hear to attract new customers, but eventually they all turn into the same shit.
-  </td>
- </tr>
-</table>
 
 # What can We do?
 
@@ -162,13 +18,13 @@ In my opinion the only true solution is relying on a software that is free & ope
 
 The bad news is that this softare doesn't exists yet that's where I come into play.
 
-I spent my whole career working for providers and I've been a provider myself. I coded very complex modules for WHMCS and have the required skills to start this project. The name of the software will be Leap.
+I spent my whole career working for providers and I've been a provider myself. I coded very complex modules for WHMCS and have the required skills to start this project. The name of the software will be Weap.
 
-# Leap: an Alternative to WHMCS
+# Weap: an Alternative to WHMCS
 
-Here is Leap in a nutshell in comparison with WHMCS.
+Here is Weap in a nutshell in comparison with WHMCS.
 
-|  | Leap | WHMCS |
+|  | Weap | WHMCS |
 | ------------- | ------------- | ------------- |
 | Source code | :hatching_chick: Open | :guardsman: Closed |
 | License | :+1: Free | :punch: Commercial |
@@ -189,7 +45,7 @@ Quick forward to 2014, I have drawn the attention of some big names (and also ma
 
 Over the years I've worked for or have helped to build hundreds if not thousands of providers. I focused on completing the lacks of WHMCS (eg. billing, affiliates, CMS, SEO) and fixing its bugs. In retrospect, I wish I had actually worked on my own system instead of wasting my time with the obtusity of WHMCS team.
 
-If you think that it is impossible for me to create Leap, please understand that over the years I managed to deliver more useful and tested features in my modules working alone than the entire staff of WHMCS combined. Let me give you an idea of what I'm talking about:
+If you think that it is impossible for me to create Weap, please understand that over the years I managed to deliver more useful and tested features in my modules working alone than the entire staff of WHMCS combined. Let me give you an idea of what I'm talking about:
 
 * [Turned WHMCS into a CMS](https://katamaze.com/whmcs/mercury/specifications) with blog, news, docs, feature requests, comments, bug reporting
 * [SEO for WHMCS](https://katamaze.com/blog/45/whmcs-seo-increase-traffic) including SEO URLs, sitemap, GeoIP, OG Tags...
